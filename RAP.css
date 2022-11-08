@@ -50,3 +50,29 @@ a {
     color: gray
     /* text-decoration: none; */
 }
+
+@media screen and (max-width: 480px) {
+    #cities {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        gap: 15px;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #cities {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 50px;
+        gap: 15px;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
