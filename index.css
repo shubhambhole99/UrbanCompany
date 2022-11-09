@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700");
+
+.grey{
+    color: rgb(117,117,117);
+}
+
+.zoom{
+    transition: transform .3s
+}
+.zoom:hover{
+    transform: scale(1.05);
+}
+body{
+    background-color: rgb(243,244,247);
+    font-family: "Poppins", sans-serif;
+    /* color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0; */
+}
+#cleaning{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* axiforma-regular
+    -apple-system
+    BlinkMacSystemFont
+    "Segoe UI"
+    Roboto
+    Helvetica
+    Arial
+    sans-serif; */
+    padding: 55px 0px;
+    display: grid;
+    row-gap: 50px;
+}
+
+#c-header{
+    border: 0px solid red;
+    text-align: center;
+}
+#c-header>h1{
+    font-size: 40px;
+    font-weight:700;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(33, 33, 33);
+    text-align:center;
+    text-indent:0px;
+    line-height:48px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    color: black;
+    }
+
+#c-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    border: 0px solid red;
+    width: 75%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+
+}
+#c-grid>div>p{
+    font-size: 20px;
+    font-weight:500;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:capitalize;
+    text-decoration:none solid rgb(33, 33, 33);
+    text-align:center;
+    text-indent:0px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:24px 0px 0px;
+    padding:0px;
+ }
+#c-grid>div{
+    border: 0px solid red;
+    text-align: center;
+    line-height: 10px;
+}
+#c-grid>div>img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 190px;
+}
+
+
+
+
+#luxury{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* axiforma-regular
+    -apple-system
+    BlinkMacSystemFont
+    "Segoe UI"
+    Roboto
+    Helvetica
+    Arial
+    sans-serif; */
+    padding: 55px 0px;
+    display: grid;
+    row-gap: 50px;
+    margin-top: 19px;
+}
+.grey{
+    color: rgb(117,117,117);
+}
+
+#l-header{
+    border: 0px solid red;
+    text-align: center;
+    line-height: 60px;
+}
+#l-header>span{
+    font-size: 23px;
+    font-weight:400;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(0, 0, 0);
+    text-align:center;
+    text-indent:0px;
+    line-height:normal;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+}
+#l-header>h1{
+    font-size: 40px;
+    font-weight:700;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(33, 33, 33);
+    text-align:center;
+    text-indent:0px;
+    line-height:48px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    color: black;
+    }
+
+#l-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    border: 0px solid red;
+    width: 75%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+#l-grid>div>p{
+    font-size: 20px;
+    font-weight:500;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:capitalize;
+    text-decoration:none solid rgb(33, 33, 33);
+    text-align:center;
+    text-indent:0px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:24px 0px 0px;
+    padding:0px;
+ }
+#l-grid>div{
+    border: 0px solid red;
+    text-align: center;
+    line-height: 10px;
+}
+#l-grid>div>img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 190px;
+}
+
+
+
+
+#repair{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* axiforma-regular
+    -apple-system
+    BlinkMacSystemFont
+    "Segoe UI"
+    Roboto
+    Helvetica
+    Arial
+    sans-serif; */
+    padding: 55px 0px;
+    display: grid;
+    row-gap: 50px;
+    margin-top: 19px;
+}
+
+#r-header{
+    border: 0px solid red;
+    text-align: center;
+}
+#r-header>h1{
+    font-size: 40px;
+    font-weight:700;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(33, 33, 33);
+    text-align:center;
+    text-indent:0px;
+    line-height:48px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    color: black;
+    }
+
+#r-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    border: 0px solid red;
+    width: 75%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+
+}
+#r-grid>div>p{
+    font-size: 18px;
+    font-weight:500;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:capitalize;
+    text-decoration:none solid rgb(33, 33, 33);
+    text-align:center;
+    text-indent:0px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:24px 0px 0px;
+    padding:0px;
+ }
+#r-grid>div{
+    border: 0px solid red;
+    text-align: center;
+    line-height: 10px;
+}
+#r-grid>div>img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 190px;
+}
+
+
+#protection{
+    border: 0px solid rebeccapurple;
+    margin-top: 19px;
+}
+#protection>img{
+    width: 100%;
+    height: 200px;
+}
+
+#policy{
+    margin-top: 19px;
+}
+#policy>img{
+    width: 100%;
+}
+
+#proud{
+    margin-top: 19px;
+}
+#proud>img{
+    width: 100%;
+}
