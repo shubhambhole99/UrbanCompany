@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+    margin-top: 17px;
+}
+#middlelogo{
+    /* border: 1px solid red; */
+    margin-right: 300px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#rightlogo{
+    /* border: 1px solid red; */
+margin:60px 30px 0px 0px;
+cursor: pointer;
+
+}
+#rightlogo>i{
+    width:25px;
+     gap:1px;
+}
+.topline{
+    margin:5px 0px 3px 0px;
+    opacity:0.2;
+    border: 1px solid gray;
+   
+}
+.menu-bar{
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.menu-bar ul li{
+    /* width:120px; */
+    /* margin:0px; */
+    padding:12px;
+    font-size: 13px;
+    font-weight:600;
+    color: #222;
+    font-family:inherit;
+}
+.menu-bar ul li a{
+
+    text-decoration: none;
+    color: #222;
+    
+}
+.active,.menu-bar ul li a:hover{
+   color: red;
+   
+}
+
+body{
+    background-image:url("./images/beauty.jpg");
+  background-repeat:no-repeat;
+}
