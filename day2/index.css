@@ -22,7 +22,7 @@ body{
 }
 #cleaning{
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     /* axiforma-regular
     -apple-system
     BlinkMacSystemFont
@@ -103,7 +103,7 @@ body{
 
 #luxury{
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     /* axiforma-regular
     -apple-system
     BlinkMacSystemFont
@@ -203,7 +203,7 @@ body{
 
 #repair{
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     /* axiforma-regular
     -apple-system
     BlinkMacSystemFont
@@ -212,7 +212,7 @@ body{
     Helvetica
     Arial
     sans-serif; */
-    padding: 55px 0px;
+    padding: 75px 0px;
     display: grid;
     row-gap: 50px;
     margin-top: 19px;
