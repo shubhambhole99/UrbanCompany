@@ -19,6 +19,7 @@
         <div id="right">
             <a href="blog.html">Blog</a>
             <a href="RAP.html">Register</a>
+
             <a href="login.html">Log-in/Signup</a>
         </div>
     </div>
@@ -119,7 +120,7 @@
         <hr />
         <div id="cities_disp"></div>
     </div>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -131,6 +132,10 @@
     function locations() {
         window.location.href = "city.html";
     }
+    username.innerHTML = null;
+    let name = localStorage.getItem("name");
+    let username = document.getElementById("username");
+    username.innerText = name;
 </script>
 
 </html>
