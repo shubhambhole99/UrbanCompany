@@ -64,7 +64,7 @@ cursor: pointer;
 .logopage2{
     /* outline:2px solid black; */
 background-size:100% 200px;
-background-image:url("./images/beauty.jpg");
+background-image:url("./images/men.jpg");
 padding:40px; 
 background-repeat: no-repeat;  
 text-align: center;
@@ -76,15 +76,14 @@ font-family: "Playfair Display",serif;
 
 
 
-
 .maindiv{
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom:15px;
     /* border: 1px solid red; */
     width:42%;
     height:auto;
     margin: auto;
-    display: flex;
+    display:flex;
 
 }
 
@@ -104,6 +103,7 @@ font-family: "Playfair Display",serif;
 .imgmaindiv>img{
     width: 100%;
 }
+
 .phmaindiv>.smallp{
     color: red;
      font-size: 12px;

@@ -64,7 +64,7 @@ cursor: pointer;
 .logopage2{
     /* outline:2px solid black; */
 background-size:100% 200px;
-background-image:url("./images/beauty.jpg");
+background-image:url("./images/furniture.jpg");
 padding:40px; 
 background-repeat: no-repeat;  
 text-align: center;
@@ -72,6 +72,7 @@ font-size: 70px;
 color: #A9A9A9;
 font-family: "Playfair Display",serif;
 }
+
 
 
 
