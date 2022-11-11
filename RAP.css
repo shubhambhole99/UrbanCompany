@@ -23,6 +23,21 @@
     padding-top: 50px;
 }
 
+
+/* #cities {
+    aspect-ratio: 1 / 1;
+    animation: 0.5s linear 1s 1 alternate sun-rise;
+}
+
+@keyframes sun-rise {
+    from {
+        transform: translateX(110vh);
+    }
+    to {
+        transform: translateX(0);
+    }
+} */
+
 .countries {
     display: flex;
     gap: 10px;
@@ -62,12 +77,17 @@ a {
         margin: auto;
         padding-top: 50px;
     }
+    /* #container {
+        border: 5px solid red;
+        width: 70%;
+        margin: auto;
+    } */
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 790px) {
     #cities {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 50px;
         gap: 15px;
         justify-content: space-evenly;
