@@ -1,7 +1,7 @@
-body {
-    font-family:  sans-serif;
+/* body {
+    font-family: sans-serif;
     background-color: red;
-}
+} */
 
 .sidenav {
     height: 100%;
@@ -27,41 +27,49 @@ body {
     display: inline;
     transition: 0.3s
 }
-#mobile{
+
+#mobile {
     width: 80%;
     display: flex;
     margin: auto;
-    height:40px;
+    height: 40px;
     margin-top: 40px;
-    border:2px solid darkgrey;
+    border: 2px solid darkgrey;
 }
-#mobile>div:nth-child(1){
+
+#mobile>div:nth-child(1) {
     flex: 2;
     border: 1px solid darkgrey;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:5%;
-}
-#mobile>div:nth-child(1)>img{
-    width: 100%;
-    height: 100%;
-    margin-right:10px ;
     padding: 5%;
 }
-#mobile>div:nth-child(2){
+
+#mobile>div:nth-child(1)>img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    padding: 5%;
+}
+
+#mobile>div:nth-child(2) {
     flex: 8;
     border: 1px solid darkgrey;
 }
-#mobile>div:nth-child(2)>input{
+
+#mobile>div:nth-child(2)>input {
     padding-left: 10px;
     width: 91%;
     height: 86%;
 }
-.sidenav a:hover, .offcanvas a:focus{
+
+.sidenav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
-#confirm{
+
+#confirm {
     width: 80%;
     font-size: 20px;
     padding-top: 10px;
@@ -76,6 +84,7 @@ body {
     text-align: center;
     align-items: center;
 }
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -83,7 +92,8 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-#otp>div{
+
+#otp>div {
     height: 50px;
     border: 1px solid grey;
     display: flex;
@@ -92,16 +102,23 @@ body {
     border-radius: 2px;
     width: 50px;
 }
-#timer{
+
+#timer {
     margin-top: 30px;
 }
-#otp>div>input{
+
+#otp>div>input {
     width: 100%;
     height: 100%;
     padding-left: 35%;
     font-size: 20px;
 }
-@media screen and (max-height: 450px){
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }

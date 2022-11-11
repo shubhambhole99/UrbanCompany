@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register/Login</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+    <div class="login">
+        <form name="form-login">
+            <h1>REGISTER</h1>
+
+            <label for="name">Email</label>
+            <input type="email" id="name" placeholder="Username" required />
+
+            <label for="pw">Password</label>
+            <input type="password" id="pw" placeholder="Password" required />
+
+            <ul class="helper-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">Must contain a number or special character.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()" />
+        </form>
+    </div>
+
+    <div class="login">
+        <form name="form-login">
+            <h1>SIGN IN</h1>
+
+            <label for="userName">Email</label>
+            <input type="email" id="userName" placeholder="Username" required />
+
+            <label for="userPw">Password</label>
+            <input type="password" id="userPw" placeholder="Password" required />
+
+            <div id="remember">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe" style="display: inline-block" />
+                <label>Remember me</label>
+            </div>
+
+            <input id="login_btn" type="submit" value="Login" onclick="check()" />
+            <hr />
+            <hr />
+            <input id="login_btn" type="submit" value="Home" onclick="home()" />
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
