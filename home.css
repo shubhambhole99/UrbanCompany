@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&display=swap");
+* {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    height: 50px;
+    background-color: #181f38;
+    width: 100%;
+    margin: auto;
+    color: white;
+    z-index: 1;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#navbar {
+    aspect-ratio: 1 / 1;
+    animation: 0.5s linear 1s 1 alternate sun-rise;
+}
+
+@keyframes sun-rise {
+    from {
+        transform: translateX(110vh);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#left>a>img {
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+#left {
+    display: flex;
+    width: 400px;
+    gap: 10px;
+    border-radius: 5px;
+    padding-left: 35px;
+}
+
+#left>h2 {
+    line-height: 50px;
+    padding-left: 5px;
+    font-size: 30px;
+    font-style: unset;
+}
+
+#right {
+    display: flex;
+    gap: 25px;
+    justify-content: right;
+    text-align: center;
+    padding-right: 30px;
+}
+
+#right>a {
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#landing {
+    height: 500px;
+    width: 100%;
+    background-image: url(https://web-static.wrike.com/cdn-cgi/image/width=3840,format=auto,quality=80/tp/storage/uploads/a6689dc7-598d-42e0-9856-339b302c27d5/rebrand-hero-illustration-homepage-screenshots-dark-desktop-2x.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #181f38;
+    color: white;
+    padding: 100px 0px 0px 70px;
+}
+
+#landing>h2 {
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+#landing>p {
+    padding-top: 10px;
+    color: gray;
+}
+
+#select_city {
+    border: 2px solid black;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#select {
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#cont1a {
+    background-color: #ebf5f3;
+}
+
+#cont1 {
+    background-color: #ebf5f3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: auto;
+    gap: 50px;
+    padding-top: 70px;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.price {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.price>div>img {
+    height: 70px;
+    width: 70px;
+}
+
+#quality {
+    background-color: #181f38;
+    padding: 25px 0px 0px 25px;
+    color: white;
+    height: 350px;
+    text-align: center;
+}
+
+#quality>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#quality>h2,
+p {
+    padding-top: 15px;
+}
+
+hr {
+    height: 20px;
+    background-color: gray;
+}
+
+#cont2 {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#booking {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 400px 230px 220px);
+    padding-top: 70px;
+    gap: 40px;
+}
+
+#booking>div>h2 {
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+#apps {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+#apps>img {
+    height: 35px;
+    width: 100px;
+}
+
+.phone>img {
+    height: 500px;
+}
+
+#send {
+    display: flex;
+    width: fit-content;
+    margin-top: 15px;
+    border: 3px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+#country_select {
+    height: 40px;
+}
+
+#send>input {
+    width: 250px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#btn {
+    width: 90px;
+    background-color: black;
+    color: white;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: rgb(34, 32, 32);
+}
+
+#footer {
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 70px;
+    background-color: black;
+    width: auto;
+}
+
+hr {
+    display: none;
+}
+
+#cities_disp,
+#links_disp {
+    padding: 20px;
+    width: auto;
+    line-height: 34px;
+    text-align: justify;
+    margin: auto;
+    height: 650px;
+    background-color: black;
+}
+
+#links_disp {
+    height: 90px;
+}
+
+hr {
+    width: 86%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+span {
+    font-size: 15px;
+    margin-right: 50px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(214, 214, 194);
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+#t>div>a {
+    border: 5px solid red;
+}
+
+@media screen and (max-width: 790px) {
+    #left {
+        display: none;
+    }
+    #right {
+        width: fit-content;
+        margin: auto;
+    }
+    #right>a {
+        width: 120px;
+    }
+    #right>a:nth-child(3) {
+        width: 180px;
+    }
+    #cont1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #booking {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .phone>img {
+        display: block;
+        margin: auto;
+    }
+    #landing {
+        background-image: url(https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=615,dpr=2/tp/storage/uploads/af67bde2-0417-4ebd-917e-de500cf395fb/hp-evo-support-2x.png);
+        background-size: cover;
+    }
+    #landing>p {
+        color: white;
+    }
+    #cities_disp {
+        background-color: black;
+        height: auto;
+    }
+    #links_disp {
+        background-color: black;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #send {
+        width: fit-content;
+        width: 100%;
+        margin: auto;
+    }
+    #send>input {
+        width: 150px;
+    }
+    #left {
+        display: none;
+    }
+    #right {
+        width: fit-content;
+        margin: auto;
+    }
+    #right>a {
+        width: 90px;
+    }
+    #right>a:nth-child(3) {
+        width: 180px;
+    }
+    #cont1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #booking {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(2, 400px); */
+    }
+    .phone>img {
+        display: block;
+        margin: auto;
+    }
+    #landing {
+        background-image: url(https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=615,dpr=2/tp/storage/uploads/af67bde2-0417-4ebd-917e-de500cf395fb/hp-evo-support-2x.png);
+        background-size: cover;
+    }
+    #landing>p {
+        color: white;
+    }
+}
