@@ -52,5 +52,5 @@ function check() {
 }
 
 function home() {
-    window.location.href = "home.html";
+    window.location.href = "welcome.html";
 }
