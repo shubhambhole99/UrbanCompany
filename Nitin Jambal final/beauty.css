@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+    margin-top: 17px;
+}
+#middlelogo{
+    /* border: 1px solid red; */
+    margin-right: 300px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#rightlogo{
+    /* border: 1px solid red; */
+margin:60px 30px 0px 0px;
+cursor: pointer;
+
+}
+#rightlogo>i{
+    width:25px;
+     gap:1px;
+}
+.topline{
+    margin:5px 0px 3px 0px;
+    opacity:0.2;
+    border: 1px solid gray;
+   
+}
+.menu-bar{
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.menu-bar ul li{
+    /* width:120px; */
+    /* margin:0px; */
+    padding:12px;
+    font-size: 13px;
+    font-weight:600;
+    color: #222;
+    font-family:inherit;
+}
+.menu-bar ul li a{
+
+    text-decoration: none;
+    color: #222;
+    
+}
+.active,.menu-bar ul li a:hover{
+   color: red;
+   
+}
+
+.logopage2{
+    /* outline:2px solid black; */
+background-size:100% 200px;
+background-image:url("./images/beauty.jpg");
+padding:40px; 
+background-repeat: no-repeat;  
+text-align: center;
+font-size: 70px;
+color: #A9A9A9;
+font-family: "Playfair Display",serif;
+}
+
+
+
+
+
+.maindiv{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border: 1px solid red; */
+    width:42%;
+    height:auto;
+    margin: auto;
+    display: flex;
+
+}
+
+.imgmaindiv{
+    width:47%;
+    /* border: 1px solid green; */
+    height:200px;
+    margin: auto;
+}
+.phmaindiv{
+    width:47%;
+    /* border: 1px solid green; */
+    height:200px;
+    margin: auto;
+  
+}
+.imgmaindiv>img{
+    width: 100%;
+}
+.phmaindiv>.smallp{
+    color: red;
+     font-size: 12px;
+}
+.date{
+    color: black;
+    opacity: 0.6;
+}
+.phmaindiv>h3{
+    margin-top: 13px;
+    font-family:'Playfair Display',serif;
+font-size: 22px;
+opacity: 0.8;
+}
+.originalp{
+    margin-top: 20px;
+    font-size: 16px;
+    
+   
+}
