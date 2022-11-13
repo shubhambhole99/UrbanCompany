@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="city.css" />
+    <style>
+      #hup>div:nth-child(2)>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#hup{
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    height: 70px;
+    width:100%;
+    /* margin-bottom: 20px; */
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 0 0 10% 10%;
+}
+#hup>div>p{
+    margin-top: 3%;
+    margin-left: 5px;
+    color: azure;
+}
+#hup>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border: 0px solid rebeccapurple;
+    color: black;
+}
+#hup>div>img{
+    width: 260px;
+height: 250px;
+margin-top: 10px;
+margin-left: -60px;
+transition: all 0.2s ease-in 0s;
+
+}
+#hup>div>img:hover{
+    width: 270px;
+height: 260px;
+
+cursor: pointer;
+}
+/* footer */
+#footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: black;
+    font-family:"Poppins", sans-serif ;
+    font-size: 20px;
+}
+#cities_disp,#links_disp{
+    padding: 20px;
+    width: 85%;
+    line-height: 34px;
+    text-align: justify;
+    margin: auto;
+    height: 650px;
+    background-color: black;
+}
+#cities_disp{
+    margin-bottom: 8%;
+}
+#links_disp{
+    height: 90px;
+}
+hr{
+    width: 86%;
+}
+span{
+    font-size: 15px;
+    margin-right: 50px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    display:inline-block;
+    color: rgb(205,204,205);
+}
+span:hover{
+    cursor: pointer;
+}
+
+#pp{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#pp>div{
+    border: 0px solid white;
+    justify-content: space-evenly;
+}
+#o{
+    flex:4;
+    padding: 10px 20px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    color: white;
+}
+
+#o>a>img{
+    height: 110%;
+    width: 40%;
+    color: white;
+    margin-left: 40px;
+}
+
+#t{
+    flex: 5;
+    background-color:black;
+    display: flex;
+    justify-content: space-around;
+    border: 0px dotted red;
+    padding: 20px;
+}
+
+
+#t>div{
+    border: 0px solid red;
+    gap: 20px;
+}
+#t>div:nth-child(1){
+   
+    padding: 10px ;
+}
+#t>div:nth-child(2){
+
+    display: flex;
+    gap: 40px;
+
+}
+#t>div>img{
+    width: 100%;
+    height: auto;
+    
+}
+#t>div>a{
+    border:0px solid red
+}
+#logo{
+    margin-top: 40px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="hup">
+        <div>
+            <img onclick="op()" src="../File_000.png" alt="">
+        </div>
+        <div>
+            <p><a style="color:azure; text-decoration: none" href="../Blog(Nitin Jambal)/topheader.html">Blog</a></p>
+            <p><a style="color:azure" href="about.html">About Us</a></p>
+            <p>Login / Sign Up</p>
+        </div>
+    </div>
+    <!-- <div id="navbar">
+        <div id="left">
+            <a href="home.html"><img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3N3_7XLkn02TWrL1puaomMvVitima_veBLZtKcNmUmMN2dOPB99XyzUhb6HibHoWHdJM&usqp=CAU" alt="" /></a>
+            <h2>Urban Services</h2>
+        </div>
+        <div id="right">
+            <a href="home.html">Book a Service</a>
+            <a href="about.html">About us</a>
+            <a href="RAP.html">Austin</a>
+        </div> -->
+    </div>
+    <div id="cont1">
+        <div id="cont1a">
+            <div id="content">
+                <h1>Earn More Earn Respect Safety Ensured</h1>
+                <p>
+                    Join 30,000+ partners across India , Australia,Singapore and UAE
+                </p>
+            </div>
+            <div id="img">
+                <img src="https://urbanclap-prod.s3-ap-southeast-1.amazonaws.com/categories/category_v2/partner_hero_india_cover.png" alt="" />
+            </div>
+        </div>
+        <div id="cont1b">
+            <h2>
+                Start earning staight away. Share your details and we will reachout to you in next step
+            </h2>
+            <div id="inputs">
+                <input style="color:white" type="text" name="" id="name" placeholder="Name" />
+                <input style="color:white" type="number" id="number" placeholder="Your Phone Number" />
+                <input style="color:white" type="text" name="" id="passion" placeholder="What do you do" />
+                <button id="btn">Get in touch</button>
+            </div>
+        </div>
+    </div>
+    <div id="cont2">
+        <h1>Join UrbanCompany to change you life</h1>
+        <p>
+            Urban company is an app based marketplace that empowers professional like you to become your own boss
+        </p>
+        <div id="cont2a" data-aos="zoom-in-up">
+            <div>
+                <h1>30,000+</h1>
+                <p>partners already on board<img style="text-align:right;border-radius: 50px;" src="https://s3-ap-southeast-1.amazonaws.com/urbanclap-prod/categories/category_v2/category_3d776cf0.svg">
+                </p>
+            </div>
+            <div>
+                <h1>$566Cr</h1>
+                <p>Paid out to partners in 2019<img style="text-align:right;border-radius: 50px;" src="https://s3-ap-southeast-1.amazonaws.com/urbanclap-prod/categories/category_v2/category_3d9a8550.svg"></p>
+            </div>
+            <div>
+                <h1>750,000+</h1>
+                <p>Services delivered each month<img style="text-align:right;border-radius: 50px;" src="https://s3-ap-southeast-1.amazonaws.com/urbanclap-prod/categories/category_v2/category_418e54c0.svg"></p>
+            </div>
+        </div>
+        <div id="cont2b" data-aos="zoom-in-down">
+            <h1>Wondering who can join</h1>
+            <p>
+                if you have 1 year of related experience in any of these fields, you can join urban company
+            </p>
+            <div id="cont2b1">
+                <div>
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/urbanclap-prod/categories/category_v2/category_4166a880.png" alt="" />
+                    <p>salon</p>
+                </div>
+                <div>
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/urbanclap-prod/categories/category_v2/category_3b225960.png" alt="" />
+                    <p>cleaning</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="hidden">
+        <div id="links_disp"></div>
+        <hr>
+        <div id="cities_disp"></div>
+        <hr>
+        <div id="pp">
+            <div id="o">
+                <a href="main.html"><img  id="logo" style="width: 260px;
+                    height: 250px; margin-top: -110px;"src="../File_000.png" alt=""></a>
+                <div style="font-size:14px;font: weight 200px;margin-left: -40px;">@2014-22 UrbanClap Technologies India pvt.ltd.</div>
+            </div>
+            <div id="t" >
+                <div style="display: flex;justify-content: space-evenly;align-items: center;">
+                    <a style="color: white"     href="https://www.facebook.com/UrbanCompany/"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a style="color: white"  href="https://twitter.com/urbancompany_UC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter  fa-2x"></i></a>
+                    <a style="color: white"  href="https://www.instagram.com/urbancompany/?hl=en"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a style="color: white"  href="https://www.youtube.com/channel/UCjNJe0jgLP257X9LsSuyIpg"><i class="fa fa-youtube fa-2x"></i></a>
+                    <a style="color: white"  href="https://in.linkedin.com/company/urbancompany"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a style="color: white"  href="https://github.com/urbanclap-engg"><i class="fa fa-github fa-2x"></i></a>
+                </div>
+                <div style="display: flex">
+                    <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png" alt="">
+                    <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+function op(){
+    window.location.assign("../home.html")
+}
+
+
+        const play=()=>{
+    let cities=[
+        "Serving In","USA","Austin","Washington","New York","Dallas","IND","Mumbai","Delhi","Kolkata","Bengaluru","Chennai","Hyderabad","Ahmedabad","Pune","Surat","Jaipur","Lucknow","Bhopal","Kanpur","Patna","Indore","Kochi","Nagpur","Chandigarh","Ghaziabad","Rajkot","Thane","Vishakapatnam","Agra","Thiruvananthapuram","Guwahati","Vadodara","Bhubaneswar","Srinagar","Meerut","Nashik","Varanasi","Raipur","Allahabad","Pimpri-Chinchwad","Aurangabad","Ludhiana","Faridabad","Gurgaon","Amritsar","Ranchi","Noida","Jabalpur","Bareilly","Kalyan-Dombivli","Vasai-Virar","Coimbatore","Vijayawada","Navi Mumbai","Gwalior","Madurai","UAE","Abu Dabhi","Dubai","Sharjah","AUS","Melbourne","Sydney","SGP","Singapore","KSA","Jeddah","Riyadh"    
+    ]
+    let links = [
+        'About Us','UC Impacts','Terms & Conditions','Privacy Policy','Interest-based Advertising','Anti Discrimination Policy','Partner Welfare Policy','Blog','Reviews','Near Me','Careers','Gift Cards','Contact Us','Quicks Links'
+    ];
+    links.forEach(function(el){
+        let sp = document.createElement("span");
+        sp.innerHTML = el;
+        document.querySelector("#links_disp").append(sp);
+    }) 
+    cities.forEach(function(el){
+        let sp = document.createElement("span");
+        sp.innerHTML = el;
+        if(el=="Serving In" || el=="USA" || el=="IND" || el== "KSA" || el=="UAE" || el=="AUS")
+        {
+            sp.style.display= "block"
+            sp.style.fontSize = "20px"
+            sp.style.marginTop= "20px"
+            sp.style.cursor = "none"
+        }
+        document.querySelector("#cities_disp").append(sp);
+    })
+}
+
+play()
+        AOS.init({
+            offset: 120,
+        });
+    </script>
+</body>
+
+</html>

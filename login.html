@@ -1,57 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register/Login</title>
-    <link rel="stylesheet" href="login.css" />
-</head>
+    <title>Document</title>
+  
 
-<body>
-    <div class="login">
-        <form name="form-login">
-            <h1>REGISTER</h1>
+  </head>
 
-            <label for="name">Email</label>
-            <input type="email" id="name" placeholder="Username" required />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&display=swap");
+    * {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+    #container {
+      display: flex;
+    }
 
-            <label for="pw">Password</label>
-            <input type="password" id="pw" placeholder="Password" required />
+    form {
+      width: 10%;
+    }
+    #searchbar{
+      display:none
+    }
+    #fin{
+      justify-items: center;
+      justify-content: center;
+      margin-left: 60%;
+    }
+    /* Navbar */
+    #hup>div:nth-child(2)>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#hup{
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    height: 70px;
+    /* margin-bottom: 20px; */
+    background-color: #201f1e;
+    color: azure;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
-            <ul class="helper-text">
-                <li class="length">Must be at least 8 characters long.</li>
-                <li class="lowercase">Must contain a lowercase letter.</li>
-                <li class="uppercase">Must contain an uppercase letter.</li>
-                <li class="special">Must contain a number or special character.</li>
-            </ul>
-            <input id="rgstr_btn" type="submit" value="Register" onclick="store()" />
-        </form>
+}
+#hup>div>p{
+    margin-top: 1%;
+    margin-left: 5px;
+    color: azure;
+}
+#hup>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border: 0px solid rebeccapurple;
+    color: black;
+}
+#hup>div>img{
+    width: 260px;
+height: 250px;
+margin-top: 10px;
+margin-left: -60px;
+transition: all 0.2s ease-in 0s;
+
+}
+#hup>div>img:hover{
+    width: 270px;
+height: 260px;
+
+cursor: pointer;
+}
+#container{
+  margin-top: 13%;
+  margin-left: 2%;
+}
+  </style>
+
+  <body>
+    
+    <div id="hup">
+      <div>
+          <img id="home" src="File_000.png" alt="">
+      </div>
+      <div>
+           <p><a style="text-decoration: none;color: azure;" href="./home.html">Home</a></p>
+
+          <p><a style="text-decoration: none;color: azure;" href="./Blog(Nitin Jambal)/topheader.html">Blog</a></p>
+          <p><a href="RegisterAsProfessional(DeepakSharma)/city.html" style="color:white">Register As A Professional</a></p>
+          <p id="change"></p>
+          <p id="logout"></p>
+      </div>
     </div>
+    <div id="container">
+      <div id="register-form">
+        <h1>Register</h1>
+        <form id="reg_form">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" />
+          <input type="text" id="username" placeholder="Username" />
 
-    <div class="login">
-        <form name="form-login">
-            <h1>SIGN IN</h1>
-
-            <label for="userName">Email</label>
-            <input type="email" id="userName" placeholder="Username" required />
-
-            <label for="userPw">Password</label>
-            <input type="password" id="userPw" placeholder="Password" required />
-
-            <div id="remember">
-                <input type="checkbox" value="lsRememberMe" id="rememberMe" style="display: inline-block" />
-                <label>Remember me</label>
-            </div>
-
-            <input id="login_btn" type="submit" value="Login" onclick="check()" />
-            <hr />
-            <hr />
-            <input id="login_btn" type="submit" value="Home" onclick="home()" />
+          <input type="text" id="password" placeholder="Password" />
+          <input type="text" id="mobile" placeholder="Mobile" />
+          <input type="text" id="description" placeholder="Description" />
         </form>
-    </div>
-    <script src="login.js"></script>
-</body>
 
+        <button id='rg' >Register</button>
+      </div>
+
+      <div id="login-form">
+        <h1>Login</h1>
+        <form>
+          <input type="text" id="login-username" placeholder="Username" />
+
+          <input type="text" id="login-password" placeholder="Password" />
+        </form>
+
+        <button id='lg' >Login</button>
+      </div>
+    </div>
+  </body>
 </html>
+<script type='module' src="auth.js"></script>

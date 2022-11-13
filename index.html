@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    body {
+    text-align: center;
+    margin: 0;
+
+    }
+    #header{
+        /* background: url("https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg") no-repeat center;  */
+        background:linear-gradient(to top,rgb(29, 29, 29) ,rgb(106, 106, 106)), url('https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg');
+        background-blend-mode: hard-light;
+        /* try contain also */
+        height: 800px;
+        /* height: 80%; */
+        /* position: relative; */
+        background-size: cover;
+        padding: 20px;
+    }
+    
+    .text {
+    
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .text>input,.text>select{
+        padding: 30px;
+    }
+    .text>h1{
+        /* font-size: 20px; */
+       margin-top: -20px;
+
+    }
+   
+   
+   
+    #left{
+        /* width: ; */
+        display: inline-block;
+        position: absolute;
+        margin-top: 2%;
+
+        transform: translateY(90px);
+        transform: translateX(-75px);
+        border:1px solid grey;
+        border-radius: 100px;
+    }
+    #left::before{
+        content:"\1F814";
+        font-size: 70px;
+        display: inline;
+        
+    }
+    #right{
+        display: inline-block;
+        margin-top: 2%;
+        transform: translateY(90px);
+        transform: translateX(10px);
+        position: absolute;
+        border:1px solid grey;
+        border-radius: 100px;
+    }
+    #right::after{
+        content: "\1F816";
+        font-size: 70px;
+    }
+    #he::after{
+        content: "\2794";
+        /* justify-items: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-content: center; */
+    }
+    /* carousel 2 */
+    #six>#left1{
+        /* width: ; */
+        /* display: inline-block; */
+        position: absolute;
+       margin-top: 3.5%;
+            /* margin-right: -40%; */
+            /* margin-left: 8%; */
+        width: 3%;
+        transform: translateY(150px);
+        transform: translateX(250px);
+        border:1px solid grey;
+        /* background-color: aqua; */
+        border-radius: 180px;
+    }
+    #left1::before{
+        content:"\1F814";
+        font-size: 70px;
+        display: inline;
+        
+    }
+    #six>#right1{
+         /* width: ; */
+        /* display: inline-block; */
+        position: absolute;
+       /* margin-top: -13%; */
+            /* margin-right: -40%; */
+            margin-left: 89%;
+        width: 3%;
+        transform: translateY(-270px);
+        /* transform: translateX(150px); */
+        border:1px solid grey;
+        /* background-color: aqua; */
+        border-radius: 180px;
+    }
+    #right1::after{
+        content: "\1F816";
+        font-size: 70px;
+    }
+   /* carousel */
+    button{
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    #cleaning>#left2{
+        /* width: ; */
+        /* display: inline-block; */
+        position: absolute;
+       /* margin-top: 3.5%; */
+            /* margin-right: -40%; */
+            /* margin-left: 8%; */
+        width: 5%;
+        /* transform: translateY(150px); */
+        transform: translateX(250px);
+        border:1px solid grey;
+        /* background-color: aqua; */
+        border-radius: 180px;
+    }
+    #left2::before{
+        content:"\1F814";
+        font-size: 70px;
+        display: inline;
+        
+    }
+  
+    #right2::after{
+        content: "\1F816";
+        font-size: 70px;
+    }
+    #thiimg2>div{
+        margin-left: 4%;
+    }
+   /* carousel 3*/
+   #cleaning>#left2{
+        /* width: ; */
+        /* display: inline-block; */
+        position: absolute;
+       margin-top: 8%;
+            /* margin-right: -40%; */
+            /* margin-left: 8%; */
+        width: 3%;
+        /* transform: translateY(150px); */
+        /* transform: translateX(150px); */
+        border:1px solid grey;
+        /* background-color: aqua; */
+        border-radius: 180px;
+    }
+    #left2::before{
+        content:"\1F814";
+        font-size: 70px;
+        display: inline;
+        
+    }
+    #cleaning>#right2{
+         /* width: ; */
+        /* display: inline-block; */
+        position: absolute;
+       margin-top: 8%;
+            /* margin-right: -40%; */
+            /* margin-left: 89%; */
+        width: 3%;
+        /* transform: translateY(-1900px); */
+        transform: translateX(2700px);
+        border:1px solid grey;
+        /* background-color: aqua; */
+        border-radius: 180px;
+    }
+    #right2::after{
+        content: "\1F816";
+        font-size: 70px;
+    }
+    button{
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    /* four */
+    /* #fou>div{
+        width: 80%;
+        display:flex;
+        margin:auto
+        
+    }
+    #fou>div>div{
+        margin:auto
+    } */
+    /* five */
+   
+    /* six */
+    /* #six>div{
+        width: 80%;
+        display:flex;
+        margin:auto
+        
+    }
+    #six>div>div{
+        margin:auto
+    } */
+    #he{
+        display: inline;
+    }
+    #he>a>p{
+        display:inline-block
+    }
+ 
+  
+   
+    .text>p{
+        font-size: 15px;
+    }
+    #place{
+        width: 30%;
+        border-radius: 7px;
+        border: 0px;
+        padding-left: 10px;
+        font-size: 18px;
+        color: rgb(64,64,64);
+    }
+    #inPlace{
+        width: 70%;
+        border-radius: 7px;
+        border: 0px;
+        padding-left: 10px;
+        font-size: 18px;
+        color: rgb(64,64,64);
+        height: 60px;
+    }
+    #sea{
+        width: 100%;
+        height: 300px;
+        display: grid;
+        gap: 10px;
+        border: 0px solid red;
+    }
+    #srcCol{
+        display: flex;
+        gap: 25px;
+        border: 0px solid red;
+        height: 65px;
+        width: 100%;
+        margin: auto;  
+    }
+
+     #mid{
+        display: flex;
+        margin:auto;
+        width: 53%;
+        border: 0px solid red;
+        margin-top: -90px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 7px;
+        box-shadow: 0 8px 26px 0 rgb(0 0 0 / 8%);
+        /* position: relative; */
+        }
+        #mid>div{
+            margin: auto;
+            text-align: center;
+            border: 0px solid red;
+
+        }
+        #mid>div:hover{
+            background-color: rgba(128, 128, 128, 0.099);
+        }
+        #main-mid{
+            background-color: white;
+            height: auto;
+            display: grid;
+            gap: 80px;
+        }
+        #main-mid>div>div{
+            padding: 15px;
+        }
+         /* second */
+    #sec{
+        display: flex;
+        margin:auto;
+        width: 53%;
+        border: 0px solid red;
+        /* margin-top: -20px; */
+        background-color: white;
+        padding: 40px;
+        box-shadow: 0 8px 26px 0 rgb(0 0 0 / 8%);
+        margin-bottom: 70px;
+    }
+    #sec>div{
+        margin: auto;
+        text-align: center;
+    }
+    #sec>div:hover{
+        background-color: rgba(128, 128, 128, 0.099);
+    }
+    #hs{
+        /* margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px; */
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+        color: #212121;
+    }
+
+     /* third */
+    #thi{
+        /* margin-top: 40px; */
+        /* display: inline-block;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        align-content: center; */
+        gap:20px;
+        background-color: white;
+        margin-top: 21px;
+        padding: 80px;
+        
+    }
+  
+    #thiimg{
+        display: inline;
+        /* margin-left: 15px;
+        margin-right: 15px; */
+    }
+    #thiimg>img{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 20%;
+    }
+    #fou{
+        background-color: white;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        /* axiforma-regular
+        -apple-system
+        BlinkMacSystemFont
+        "Segoe UI"
+        Roboto
+        Helvetica
+        Arial
+        sans-serif; */
+        padding: 55px 0px;
+        display: grid;
+        row-gap: 50px;
+        margin-top: 19px;
+    }
+    #fou>h1{
+        font-size: 40px;
+        font-weight:700;
+        font-style:normal;
+        font-variant:normal;
+        text-transform:none;
+        text-decoration:none solid rgb(33, 33, 33);
+        text-align:center;
+        text-indent:0px;
+        line-height:48px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding:0px;
+        color: black;   
+    }
+
+    #fou>div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        border: 0px solid red;
+        width: 75%;
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #fou>div>div{
+        border: 1px solid red;
+        border: 0px solid red;
+        text-align: center;
+        line-height: 10px;
+        margin-left: 30px;
+    }
+    #fou>div>div>img{
+        /* border: 1px solid red; */
+        width: 450px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        /* margin-left: 40px; */
+        height: 250px;
+    }
+    .grey{
+        color: rgb(155,155,154);
+    }
+    .bold{
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #212121;
+        text-align: center;
+        text-transform: capitalize; 
+    }
+    #fiv{
+        background-color: white;
+        margin-top: 21px;
+        padding: 80px;
+    }
+    #fiv>div{
+        width: 60%;
+        display:flex;
+        margin:auto;
+        gap: 30px;
+        border: 0px solid rebeccapurple;
+        margin-top: 30px;
+    }
+    #fiv>div>div>img{
+        border-radius: 15px;
+    }
+   
+    #fiv>h1{
+        font-size: 40px;
+        font-weight:700;
+        font-style:normal;
+        font-variant:normal;
+        text-transform:none;
+        text-decoration:none solid rgb(33, 33, 33);
+        text-align:center;
+        text-indent:0px;
+        line-height:48px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding:0px;
+        color: black; 
+        margin-bottom: 17px;
+    }
+    #fiv>span{
+        font-size: 26px;
+        font-weight:400;
+        font-style:normal;
+        font-variant:normal;
+        text-transform:none;
+        text-decoration:none solid rgb(0, 0, 0);
+        text-align:center;
+        text-indent:0px;
+        line-height:normal;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        padding:0px;
+       
+    }
+    #fiv>div>div>img{
+        width: 100%;
+    }
+
+    #six{
+        width: 100%;
+        font-size: 18px;
+        background-color: white;
+        margin-top: 21px;
+        padding: 55px 0px;
+        display: inline-block;
+        min-height: auto;
+    }
+    #six>#thiimg2{
+        width:75%;
+        display:flex;
+        margin:auto;
+        gap: 30px;
+        /* border: 0px solid rebeccapurple;  */
+        margin-top: 30px;
+    }
+   
+    #six>h1{
+        font-size: 40px;
+        font-weight:700;
+        font-style:normal;
+        font-variant:normal;
+        text-transform:none;
+        text-decoration:none solid rgb(33, 33, 33);
+        text-align:center;
+        text-indent:0px;
+        line-height:48px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding:0px;
+        color: black; 
+        margin-bottom: 17px;
+    }
+    #six>span{
+        font-size: 26px;
+        font-weight:400;
+         font-style:normal;
+         font-variant:normal;
+        text-transform:none;
+        text-decoration:none solid rgb(0, 0, 0);
+        text-align:center;
+        text-indent:0px;
+        line-height:normal;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        padding:0px;
+        color: rgb(116,116,117);
+    }
+    #six>div>div>img{
+        width: 430px;
+    border-radius: 15px;
+    /* margin-bottom: 15px; */
+    height: 250px;
+    /* margin-left: 20%; */
+    }
+    #hup>div:nth-child(2)>p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #hup{
+        display: flex;
+        justify-content: space-around;
+        gap: 25%;
+
+    }
+    #hup>div>p{
+        margin-left: 5px;
+    }
+    #hup>div:nth-child(2){
+        display: flex;
+        justify-content: space-evenly;
+        width: 35%;
+        border: 0px solid rebeccapurple;
+        color: white;
+    }
+    #hup>div>img{
+        width: 260px;
+    height: 250px;
+    transition: all 0.2s ease-in 0s;
+    }
+    #hup>div>img:hover{
+        width: 270px;
+    height: 260px;
+    cursor: pointer;
+    }
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        /* color: white; */
+        transform: translateX(-100%);
+        transition: all 1s;
+        /* transition: all 1s */ 
+       }
+
+      .show {
+        opacity: 1;
+        filter: blur(0);
+        /* transition-delay: 5s; */
+        /* color: red; */
+        transform: translateX(0);
+      }
+
+
+     
+    </style>
+
+    <body>
+    
+<div id="try1" >
+   <div id="one">
+    <i  style="color: grey;" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+    <input style="font-size: 19px; font-weight: 400;padding-bottom: 10px;" placeholder="Search for services">
+  
+</div>
+<div id="two" >
+    <div>
+        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png">
+        <p>Women's<br>Therapy</p>
+    </div>
+    <div>
+        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png">
+        <p>Salon For Men</p>
+    </div>
+    <div style="margin-top: -3px;">
+        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png"> 
+        <p>Men's Therapy</p>
+    </div>
+</div>
+
+    
+</div>
+<div id="header" class="hidden">
+    <div id="hup">
+        <div>
+            <img onclick="op()" src="File_000.png" alt="">
+        </div>
+        <div>
+            <p><a style="text-decoration: none;color: azure;" href="./Blog(Nitin Jambal)/topheader.html">Blog</a></p>
+            <p><a href="RegisterAsProfessional(DeepakSharma)/city.html" style="color:white">Register As A Professional</a></p>
+            <p onclick="login()">Login / Sign Up</p>
+        </div>
+    </div>
+    <div id="hDW" >
+      <div class="text">
+        <p>Home / Delhi-Ncr</p>
+        <h1 >Home services, on demand.</h1>
+        <div id="srcCol">
+            <select id="place">
+                <option>Delhi NCR</option>
+            </select>
+            <div onmouseleave="hideitem()" id="sea">
+                <input onmouseover="showitem()" placeholder="Search for services" id="inPlace">
+                <div id="sect">
+                    <button class="accordion">Men Section
+                    </button>
+                    
+                    <div class="panel">
+                    <div id="img">
+                        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png" alt="">
+                    </div>
+                    <div id="var">
+                        <p>Men Saloon</p>
+                        <p>Men Therapy</p>
+                        <p>Men Spa</p>
+                    </div>
+                    
+                    </div>
+                    
+                    <button class="accordion">Women Section</button>
+                    <div class="panel">
+                    
+                        <div id="img">
+                            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757635235-1a139e.png" alt="">
+                        </div>
+                        <div id="var">
+                            <p>Women Saloon</p>
+                            <p>Women Therapy</p>
+                            <p>Women Spa</p>
+                        </div>
+                    </div>
+                    
+                    <button class="accordion">Home Service Section</button>
+                    <div class="panel">
+                    
+                        <div id="img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFju-_xBAH6Kb636Uv2nG0ckFhm_-QIL-Xw&usqp=CAU" alt="">
+                        </div>
+                        <div id="var">
+                            <p>Electronic Applicance Repair</p>
+                            <p>Routine Service</p>
+                            <p>Electrical Applicance Repair</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+           
+           
+            
+        </div>
+        
+      </div>
+ 
+    </div>    
+</div>
+<!-- mid -->
+<div id="main-mid">
+            <div id="mid" class="hidden">
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757635235-1a139e.png">
+                    <p>Salon For Women</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/supply/customer-app-supply/1635331606894-7b633f.png">
+                    <p>Hair,Skin,Nails</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_1312fb60.png">
+                    <p>Women's Therapies</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757629780-2b2187.png">
+                    <p>Salon For Men</p>
+                </div>
+                <div> 
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1609757731250-ba3308.png">
+                    <p>Men's Therapies</p>
+                </div>
+            </div>
+            <h1 id="hs">Home Services</h1>
+            <div id="sec"> 
+                <div>  
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_72d18950.png"></img>
+                    <p>Appliance Repair</p>
+            </div>
+                <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1631679515206-a69389.png"></img>
+                <p>Home Painting</p>
+            
+            </div>
+                <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_6b1f5250.png"></img>
+                <p>Cleaning & Pest</p>
+        
+                </div>
+                <div>      
+                  <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/images/growth/home-screen/1641213886588-90a903.png"></img>
+                  <p>Disinfection</p>
+        
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_64/t_high_res_template/categories/category_v2/category_6fbad370.png"></img>
+                    <p>Home Repairs</p>
+        
+                </div>
+            </div>
+</div>
+   
+<div id="thi" class="hidden">
+        <div id="left"></div>
+        <div id="thiimg">
+            
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1667386493900-1d5e09.jpeg">
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/supply/partner-app-supply/1667472964177-812867.jpeg">
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/home-screen/1667233651076-c210f8.jpeg">
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_568/t_high_res_template/images/growth/luminosity/1667594664089-1b275d.jpeg">
+           
+        </div>
+        <div id="right"></div>
+         
+</div>
+    
+<div id="fou" class="hidden">
+    <h1> New Category Launches</h1>
+    <div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1646140576865-02aba1.jpeg">
+            <p class="bold" style="font-size:22px;">Expert Counselling</p>
+            <p class="grey">Advanced Skin Treatments</p>
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/bigpictures/carpenter.jpg">
+            <p class="bold" style="font-size:22px;"> Furniture Making , Uphoistery & Polish</p>
+        </div>
+        <div> 
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1635829954373-d05590.jpeg">
+            <p class="bold" style="font-size:22px;">Air Purifier</p>
+            <p class="grey">Flat 100 off</p>
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/supply/customer-app-supply/1643120136395-80523e.jpeg">
+            <p class="bold" style="font-size:22px;">RO Water Purifier</p></div>
+        
+  
+    </div>
+</div>
+<div id="fiv" class="hidden">
+    <h1 >Applicances</h1>
+    <span class="grey">Servicing,Repair,Installation & Uninstallation</span>
+    <div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_c0667020.png"></img>
+            <p class="bold" style="font-size:22px;">Geyser</p>
+            <p style="color:grey">Starts at 249</p>
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_bbb8c690.png">
+            <p class="bold" style="font-size:22px;">Water Purifier Serivce</p>
+            <p style="color:grey">Up to 45% off</p>
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1635829954373-d05590.jpeg">
+            <p class="bold" style="font-size:22px;">Water Purifier Serivce</p>
+            <p style="color:grey">Flat 100 off</p>
+            
+        </div>
+    </div>
+</div>
+<div id="six" class="hidden">
+    <h1>Salon, Spa and Massage services</h1>
+    <span>Hygienic & Single use products| Low-contact services</span>
+    <div id="left1"></div>
+    <div id="thiimg2">
+        
+    <div >
+        
+        <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1603078782132-dfcd55.jpeg">
+        <p class="bold" style="font-size:22px;">Salon Prime</p>
+        <p class="grey">Free Waxing</p>
+    </div>
+    <div>
+        <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1615874646690-66ab68.jpeg">
+        <p class="bold" style="font-size:22px;">Salon For Men</p>
+        <p class="grey">Flat 100 off</p>
+    </div>
+    <div>
+        <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1601893536279-77bf02.png">
+        <p class="bold" style="font-size:22px;">Spa for Women</p>
+        <p class="grey">Free head massage</p>
+    </div>
+    <div> 
+        <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/supply/customer-app-supply/1606211470897-f4afbc.jpeg">
+        <p class="bold" style="font-size:22px;">Massage for Men</p>
+        <p class="grey">Starts at 499</p>
+    </div>
+   
+    <!-- <div>
+        <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_9b68f7b0.jpeg">
+        <p class="bold">Party Makeup</p>
+        <p class="grey">Artists trained by Chandni Singh Studio</p>
+    </div> -->
+    
+    </div>
+    <div id="right1"></div>
+    
+    
+</div>
+
+
+<!-- sarthak -->
+<div id="cleaning" class="hidden">
+    <div id="c-header">
+        <h1>Cleaning & Pest Control </h1>
+    </div>
+    <div id="left2"></div>
+
+    <div id="c-grid">
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1625159882387-9585c7.jpeg" alt="">
+            <p style="font-size:22px;">Bathroom and Kitchen Cleaning</p>
+
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632396793425-1a5418.jpeg" alt="">
+            <p style="font-size:22px;">Full Home Cleaning</p>
+            
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1630420912606-2fffa6.jpeg" alt="">
+            <p style="font-size:22px;">Sofa & Carpet Cleaning</p>
+            
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1631159612066-53b210.jpeg" alt="">
+            <p style="font-size:22px;">Cockroach, Ant & General Pest Control</p>
+           
+        </div>
+        <!-- <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632490257439-ef28d2.jpeg" alt="">
+            <p style="font-size:22px>Bed Bugs Control</p>
+            
+        </div> -->
+        <!-- <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/luminosity/1632474326407-0aae21.jpeg" alt="">
+            <p style="font-size:22px>Termite Control</p>
+            
+        </div> -->
+    </div>
+    <div id="right2"></div>
+
+</div>
+
+<div id="luxury" class="hidden">
+    <div id="l-header">
+        <h1>UC Luxury Experience</h1>
+        <span class="grey">Top Professionals | Best Brands | Premium Experience</span>
+    </div>
+    <div id="l-grid">
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883165804-025664.png" alt="">
+            <p style="font-size:22px;" >Salon Luxe</p>
+
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164057-dd5910.png" alt="">
+            <p style="font-size:22px;" >Salon For Men Royale</p>
+            
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164904-165c1e.png" alt="">
+            <p style="font-size:22px;">Spa Luxe</p>
+            
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/images/growth/home-screen/1631883164502-08f9f6.png" alt="">
+            <p style="font-size:22px;">Massage Therapy For Men Royale</p>
+           
+        </div>
+    </div>
+</div>
+
+<div id="repair" class="hidden">
+    <div id="r-header">
+        <h1>Home Repairs</h1>
+    </div>
+    <div id="r-grid">
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/bigpictures/carpenter.jpg" alt="">
+            <p style="font-size:22px;">Furniture Making, Upholstery & Polish</p>
+
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/home_screen/carpenter.jpg" alt="">
+            <p style="font-size:22px;">Carpenters</p>
+            
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/category_v2/category_a91b73d0.jpeg" alt="">
+            <p style="font-size:22px;">Electricians</p>
+            
+        </div>
+        <div>
+            <img class="zoom" src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_532/t_high_res_category/categories/home_screen/plumber.jpg" alt="">
+            <p style="font-size:22px;">Plumbers</p>
+           
+        </div>
+    </div>
+</div>
+
+<div style="background-color:white"><div id="protection" class="hidden">
+    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2304/t_high_res_template/categories/category_v2/category_a4e46fa0.png" alt="">
+</div></div>
+
+
+<div id="policy" class="hidden">
+    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2304/t_high_res_template/images/growth/home-screen/1624344861242-558286.png" alt="">
+</div>
+
+<div id="proud" class="hidden">
+    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_auto,f_auto,fl_progressive:steep,w_2304/t_high_res_template/categories/category_v2/category_3cffdf20.png" alt="">
+</div>
+
+
+<div id="footer" class="hidden">
+    <div id="links_disp"></div>
+    <hr>
+    <div id="cities_disp"></div>
+    <hr>
+    <div id="pp">
+        <div id="o">
+            <a href="main.html"><img style="width: 260px;
+                height: 250px; margin-top: -110px;"src="File_000.png" alt=""></a>
+            <div style="font-size:14px;font: weight 200px;margin-left: -40px;">@2014-22 UrbanClap Technologies India pvt.ltd.</div>
+        </div>
+        <div id="t">
+            <div style="display: flex;justify-content: space-evenly;align-items: center;">
+                <a style="color: white" href="https://www.facebook.com/UrbanCompany/"><i class="fa fa-facebook fa-2x"></i></a>
+                <a style="color: white"  href="https://twitter.com/urbancompany_UC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter  fa-2x"></i></a>
+                <a style="color: white"  href="https://www.instagram.com/urbancompany/?hl=en"><i class="fa fa-instagram fa-2x"></i></a>
+                <a style="color: white"  href="https://www.youtube.com/channel/UCjNJe0jgLP257X9LsSuyIpg"><i class="fa fa-youtube fa-2x"></i></a>
+                <a style="color: white"  href="https://in.linkedin.com/company/urbancompany"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a style="color: white"  href="https://github.com/urbanclap-engg"><i class="fa fa-github fa-2x"></i></a>
+            </div>
+            <div style="display: flex">
+                <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png" alt="">
+                <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+    function op(){
+    window.location.assign("./home.html")
+}
+function login(){
+    window.location.assign("./login.html")
+}
+</script>
+
+

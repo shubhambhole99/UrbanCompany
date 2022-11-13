@@ -6,12 +6,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        #hup>div:nth-child(2)>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#hup{
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    height: 70px;
+    /* margin-bottom: 20px; */
+    background-color: #201f1e;
+    color: azure;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+#hup>div>p{
+    margin-top: 1%;
+    margin-left: 5px;
+    color: azure;
+}
+#hup>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border: 0px solid rebeccapurple;
+    color: black;
+}
+#hup>div>img{
+    width: 260px;
+height: 250px;
+margin-top: 10px;
+margin-left: -60px;
+transition: all 0.2s ease-in 0s;
+
+}
+#hup>div>img:hover{
+    width: 270px;
+height: 260px;
+
+cursor: pointer;
+}
+/* footer */
+#footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: black;
+    font-family:"Poppins", sans-serif ;
+    font-size: 20px;
+}
+#cities_disp,#links_disp{
+    padding: 20px;
+    width: 85%;
+    line-height: 34px;
+    text-align: justify;
+    margin: auto;
+    height: 650px;
+    background-color: black;
+}
+#cities_disp{
+    margin-bottom: 8%;
+}
+#links_disp{
+    height: 90px;
+}
+hr{
+    width: 86%;
+}
+span{
+    font-size: 15px;
+    margin-right: 50px;
+    font-family: Sans-serif;
+    font-weight: bold;
+    display:inline-block;
+    color: rgb(205,204,205);
+}
+span:hover{
+    cursor: pointer;
+}
+
+#pp{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#pp>div{
+    border: 0px solid white;
+    justify-content: space-evenly;
+}
+#o{
+    flex:4;
+    padding: 10px 20px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    color: white;
+}
+
+#o>a>img{
+    height: 110%;
+    width: 40%;
+    color: white;
+    margin-left: 40px;
+}
+
+#t{
+    flex: 5;
+    background-color:black;
+    display: flex;
+    justify-content: space-around;
+    border: 0px dotted red;
+    padding: 20px;
+}
+
+
+#t>div{
+    border: 0px solid red;
+    gap: 20px;
+}
+#t>div:nth-child(1){
+   
+    padding: 10px ;
+}
+#t>div:nth-child(2){
+
+    display: flex;
+    gap: 40px;
+
+}
+#t>div>img{
+    width: 100%;
+    height: auto;
+    
+}
+#t>div>a{
+    border:0px solid red
+}
+#logo{
+    margin-top: 40px;
+}
+    </style>
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="hup">
+        <div>
+            <img onclick="op()" src="File_000.png" alt="">
+        </div>
+        <div>
+            <p><a style="color:azure;text-decoration: none" href="./Blog(Nitin Jambal)/topheader.html">Blog</a></p>
+            <p><a style="color:azure" href="./RegisterAsProfessional(DeepakSharma)/RAP.html">Register As A Professional</a></p>
+            <p onclick="login()">Login / Sign Up</p>
+        </div>
+    </div>
+
+    <!-- <div id="navbar">
         <div id="left">
             <a href="home.html"><img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3N3_7XLkn02TWrL1puaomMvVitima_veBLZtKcNmUmMN2dOPB99XyzUhb6HibHoWHdJM&usqp=CAU" alt="" /></a>
             <h2>Urban Services</h2>
@@ -19,22 +176,23 @@
         <div id="right">
             <a href="blog.html">Blog</a>
             <a href="RAP.html">Register</a>
+
             <a href="login.html">Log-in/Signup</a>
         </div>
-    </div>
+    </div> -->
 
     <div id="landing">
-        <p>URBAN COMAPANY</p>
+        <p>URBAN SERVICES</p>
         <h2>Quality home services, on demand</h2>
         <p>
             Experienced, hand-picked Professional top serve you at your doorstep
         </p>
         <div id="select_city">
             <p>Where do you need a service?</p>
-            <select onchange="locations()" name="" id="select">
+            <select style="color:white;background-color: #201f1e;border-radius: 10px;"onchange="locations()" name="" id="select">
           <option value="Select your city">Select your city</option>
           <option value="Delhi-NCR">
-            <a href="RAP.html">Delhi-NCR</a>
+            <a href="index.html">Delhi-NCR</a>
           </option>
           <option value="Banglore">Banglore</option>
           <option value="Mumbai">Mumbai</option>
@@ -48,7 +206,7 @@
                 <h1 id="wuc">Why Urban Company?</h1>
                 <div class="price">
                     <div>
-                        <img src="data:image/png;base64,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"
+                        <img style="border-radius: 200px;" src="data:image/png;base64,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"
                             alt="" />
                     </div>
                     <div>
@@ -58,7 +216,7 @@
                 </div>
                 <div class="price">
                     <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCND_vMF77a3wHWhAmbV2kE5sc8Gp0QCfTg&usqp=CAU&reload=on" alt="" />
+                        <img style="border-radius: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCND_vMF77a3wHWhAmbV2kE5sc8Gp0QCfTg&usqp=CAU&reload=on" alt="" />
                     </div>
                     <div>
                         <h3>Expert Only</h3>
@@ -67,7 +225,7 @@
                 </div>
                 <div class="price">
                     <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpODMJoz18sWUE4o8ggbWkSFXlUnTLGP9s-A&usqp=CAU" alt="" />
+                        <img style="border-radius: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpODMJoz18sWUE4o8ggbWkSFXlUnTLGP9s-A&usqp=CAU" alt="" />
                     </div>
                     <div>
                         <h3>Fully equipped</h3>
@@ -75,8 +233,9 @@
                     </div>
                 </div>
             </div>
+            
             <div id="quality" data-aos="zoom-in-down">
-                <img src="https://media.istockphoto.com/vectors/private-security-icon-flat-design-vector-id509992040?k=20&m=509992040&s=170667a&w=0&h=XvxRW4hRd9l8jYfy8G1HhSwT7yYht57cPGkPSXCwOlc=" alt="" />
+                <img  src="https://media.istockphoto.com/vectors/private-security-icon-flat-design-vector-id509992040?k=20&m=509992040&s=170667a&w=0&h=XvxRW4hRd9l8jYfy8G1HhSwT7yYht57cPGkPSXCwOlc=" alt="" />
                 <h2>100% Quality Assured</h2>
                 <p>if you don't love our services, we will make it right</p>
             </div>
@@ -114,23 +273,82 @@
             </div>
         </div>
     </div>
-    <div id="footer">
+    <div id="footer" class="hidden">
         <div id="links_disp"></div>
-        <hr />
+        <hr>
         <div id="cities_disp"></div>
+        <hr>
+        <div id="pp">
+            <div id="o">
+                <a href="main.html"><img  id="logo" style="width: 260px;
+                    height: 250px; margin-top: -110px;"src="File_000.png" alt=""></a>
+                <div style="font-size:14px;font: weight 200px;margin-left: -40px;">@2014-22 UrbanClap Technologies India pvt.ltd.</div>
+            </div>
+            <div id="t" >
+                <div style="display: flex;justify-content: space-evenly;align-items: center;">
+                    <a style="color: white"     href="https://www.facebook.com/UrbanCompany/"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a style="color: white"  href="https://twitter.com/urbancompany_UC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter  fa-2x"></i></a>
+                    <a style="color: white"  href="https://www.instagram.com/urbancompany/?hl=en"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a style="color: white"  href="https://www.youtube.com/channel/UCjNJe0jgLP257X9LsSuyIpg"><i class="fa fa-youtube fa-2x"></i></a>
+                    <a style="color: white"  href="https://in.linkedin.com/company/urbancompany"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a style="color: white"  href="https://github.com/urbanclap-engg"><i class="fa fa-github fa-2x"></i></a>
+                </div>
+                <div style="display: flex">
+                    <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png" alt="">
+                    <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 300,
-        });
-    </script>
+   
 </body>
+<script src="../main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    function locations() {
-        window.location.href = "city.html";
-    }
+   function op(){
+    window.location.assign("./index.html")
+}
+function login(){
+    window.location.assign("./login.html")
+}
+
+const play=()=>{
+    let cities=[
+        "Serving In","USA","Austin","Washington","New York","Dallas","IND","Mumbai","Delhi","Kolkata","Bengaluru","Chennai","Hyderabad","Ahmedabad","Pune","Surat","Jaipur","Lucknow","Bhopal","Kanpur","Patna","Indore","Kochi","Nagpur","Chandigarh","Ghaziabad","Rajkot","Thane","Vishakapatnam","Agra","Thiruvananthapuram","Guwahati","Vadodara","Bhubaneswar","Srinagar","Meerut","Nashik","Varanasi","Raipur","Allahabad","Pimpri-Chinchwad","Aurangabad","Ludhiana","Faridabad","Gurgaon","Amritsar","Ranchi","Noida","Jabalpur","Bareilly","Kalyan-Dombivli","Vasai-Virar","Coimbatore","Vijayawada","Navi Mumbai","Gwalior","Madurai","UAE","Abu Dabhi","Dubai","Sharjah","AUS","Melbourne","Sydney","SGP","Singapore","KSA","Jeddah","Riyadh"    
+    ]
+    let links = [
+        'About Us','UC Impacts','Terms & Conditions','Privacy Policy','Interest-based Advertising','Anti Discrimination Policy','Partner Welfare Policy','Blog','Reviews','Near Me','Careers','Gift Cards','Contact Us','Quicks Links'
+    ];
+    links.forEach(function(el){
+        let sp = document.createElement("span");
+        sp.innerHTML = el;
+        document.querySelector("#links_disp").append(sp);
+    }) 
+    cities.forEach(function(el){
+        let sp = document.createElement("span");
+        sp.innerHTML = el;
+        if(el=="Serving In" || el=="USA" || el=="IND" || el== "KSA" || el=="UAE" || el=="AUS")
+        {
+            sp.style.display= "block"
+            sp.style.fontSize = "20px"
+            sp.style.marginTop= "20px"
+            sp.style.cursor = "none"
+        }
+        document.querySelector("#cities_disp").append(sp);
+    })
+}
+
+play()
+
+
+
+
+
+
+    AOS.init({
+        offset: 300,
+    });
 </script>
+
 
 </html>
