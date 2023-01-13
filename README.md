@@ -15,6 +15,10 @@
 - Built the on-scroll functionality
 - Managed the GitHub codebase.
 # Preview
+<img align="left" alt="Coding" width="100%"  src="https://i.postimg.cc/d19JWNQL/1.jpg" border-radius="500%"/>
+<img align="left" alt="Coding" width="100%"  src="https://i.postimg.cc/hPYc3dnb/2.jpg" border-radius="500%"/>
+<img align="left" alt="Coding" width="100%"  src="https://i.postimg.cc/YSHcJNsg/3.jpg" border-radius="500%"/>
+<img align="left" alt="Coding" width="100%"  src="https://i.postimg.cc/HWPqp1NT/4.jpg" border-radius="500%"/>
 
 
 
